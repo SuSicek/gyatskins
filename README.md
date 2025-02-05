@@ -1,0 +1,5 @@
+- zobrazi se login
+- vytvorite ucet
+- pak se prihlasite
+- muzete si hrat s tabulkou
+- 
