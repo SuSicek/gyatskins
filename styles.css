@@ -1,0 +1,136 @@
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background-image: url('hyper.png'); /* Adjust the path if necessary */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #fff; /* Default text color to contrast with the background */
+    max-width: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1, h2, h3 {
+    margin-top: 20px;
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Table Styles */
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 60%; /* Make tables 60% of the screen width */
+    max-width: 60%;
+    background-color: rgba(255, 255, 255, 0.9);
+    color: #000;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 5px 0;
+}
+
+/* Form Styles */
+form {
+    background-color: rgba(0, 0, 0, 0.8); /* Black transparent background */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px auto;
+    color: #fff;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 60%; /* Make forms 60% of the screen width */
+    max-width: 60%;
+}
+
+input, button[type="submit"] {
+    width: calc(100% - 20px); /* Adjust for padding */
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+}
+
+input {
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #ccc;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+}
+
+/* Logout Button Styles */
+.logout-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #dc3545;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.logout-button:hover {
+    background-color: #c82333;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table, form {
+        width: 95%; /* Adjust for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    h1, h2, h3 {
+        font-size: 2rem;
+    }
+
+    button {
+        font-size: 0.9rem;
+    }
+
+    table, form {
+        width: 90%;
+    }
+}
